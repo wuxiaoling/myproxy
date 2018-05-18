@@ -1,0 +1,27 @@
+1.搭建本地环境服务器
+
+2.搭建外网服务器环境，启动../../bin/php -c /home/php/lib/php.ini  startSocket.php start
+
+3.启动本地客户端 打包生成相应客户端 pyinstaller模块安装
+
+pyinstaller -F -w -i py.ico myproxy.py
+
+4.点击dist客户端配置
+
+20171127备注：
+
+	目前版本解决了，本地大数据传输问题
+	暂时还未处理，当大数据量访问时候的数据完整性问题
+
+20171129备注：
+	
+	使用了VB6mini生成tk的GUI界面，同样可以跨平台
+	解决数据完整性
+	解决了客户端GUI显示，和线程残存问题
+	兼容性还未测试
+	server端暂时用PHP7.0加workman完成的，后续可以改成python版
+
+
+
+
+
